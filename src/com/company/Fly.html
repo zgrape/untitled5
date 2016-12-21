@@ -1,0 +1,144 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>火影忍者</title>
+</head>
+<link type="text/css" rel="stylesheet" href="fly.css" />
+<body>
+
+
+<div style="width:1200px;margin:0 auto;">
+    <div id="vertical" class="brand vertical">
+        <a target="_blank" href="#"><img alt="" src="C:\Users\lenovo\IdeaProjects\untitled5\src\com\company\1.jpg" /><div class="info">
+            <table width="250" height="335" border="0">
+                <tr>
+                    <td><div class="text" style=" text-align:center;">姓名</div></td>
+                </tr>
+                <tr>
+                    <td>学校</td>
+                </tr>
+                <tr>
+                    <td>专业</td>
+                </tr>
+            </table>
+        </div></a>
+        <a target="_blank" href="#"><img alt="" src="C:\Users\lenovo\IdeaProjects\untitled5\src\com\company\2.jpg" /><div class="info">
+            <table width="250" height="335" border="0">
+                <tr>
+                    <td><div class="text" style=" text-align:center;">姓名</div>></td>
+                </tr>
+                <tr>
+                    <td>学校</td>
+                </tr>
+                <tr>
+                    <td>专业</td>
+                </tr>
+            </table>
+        </div></a>
+        <a target="_blank" href="#"><img alt="" src="C:\Users\lenovo\IdeaProjects\untitled5\src\com\company\3.jpg" /><div class="info">
+            <table width="250" height="335" border="0">
+                <tr>
+                    <td>姓名</td>
+                </tr>
+                <tr>
+                    <td>学校</td>
+                </tr>
+                <tr>
+                    <td>专业</td>
+                </tr>
+            </table>
+        </div></a>
+        <a target="_blank" href="#"><img alt="" src="C:\Users\lenovo\IdeaProjects\untitled5\src\com\company\4.jpg" /><div class="info">
+            <table width="250" height="335" border="0">
+                <tr>
+                    <td>姓名</td>
+                </tr>
+                <tr>
+                    <td>学校</td>
+                </tr>
+                <tr>
+                    <td>专业</td>
+                </tr>
+            </table>
+        </div></a>
+        <a target="_blank" href="#"><img alt="" src="C:\Users\lenovo\IdeaProjects\untitled5\src\com\company\5.jpg" /><div class="info">
+            <table width="250" height="335" border="0">
+                <tr>
+                    <td>姓名</td>
+                </tr>
+                <tr>
+                    <td>学校</td>
+                </tr>
+                <tr>
+                    <td>专业</td>
+                </tr>
+            </table>
+        </div></a>
+        <a target="_blank" href="#"><img alt="" src="C:\Users\lenovo\IdeaProjects\untitled5\src\com\company\6.jpg" /><div class="info">
+            <table width="250" height="335" border="0">
+                <tr>
+                    <td>姓名</td>
+                </tr>
+                <tr>
+                    <td>学校</td>
+                </tr>
+                <tr>
+                    <td>专业</td>
+                </tr>
+            </table>
+        </div></a>
+        <a target="_blank" href="http://www.baidu.com"><img alt="" src="C:\Users\lenovo\IdeaProjects\untitled5\src\com\company\7.jpg" /><div class="info">
+            <table width="250" height="335" border="0">
+                <tr>
+                    <td>姓名</td>
+                </tr>
+                <tr>
+                    <td>学校</td>
+                </tr>
+                <tr>
+                    <td>专业</td>
+                </tr>
+            </table>
+        </div></a>
+        <a target="_blank" href="#"><img alt="" src="C:\Users\lenovo\IdeaProjects\untitled5\src\com\company\8.jpg" /><div class="info">
+            <table width="250" height="335" border="0">
+                <tr>
+                    <td>姓名</td>
+                </tr>
+                <tr>
+                    <td>学校</td>
+                </tr>
+                <tr>
+                    <td>专业</td>
+                </tr>
+            </table>
+        </div></a>
+    </div>
+</div>
+<script type="text/javascript" src="yellowss"></script>
+<script type="text/javascript">
+    //品牌翻转
+    var turn = function(target,time,opts){
+        target.find('a').hover(function(){
+            $(this).find('img').stop().animate(opts[0],time,function(){
+                $(this).hide().next().show();
+                $(this).next().animate(opts[1],time);
+            });
+        },function(){
+            $(this).find('.info').animate(opts[0],time,function(){
+                $(this).hide().prev().show();
+                $(this).prev().animate(opts[1],time);
+            });
+        });
+    }
+    var verticalOpts = [{'width':0},{'width':'250px'}];
+    turn($('#vertical'),100,verticalOpts);
+    var horizontalOpts = [{'height':0,'top':'120px'},{'height':'335px','top':0}];
+    turn($('#horizontal'),100,horizontalOpts);
+</script>
+</body>
+</html>
+
+
+
