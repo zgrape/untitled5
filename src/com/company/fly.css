@@ -1,0 +1,31 @@
+*{margin:0;padding:0;list-style-type:none;}
+a,img{border:0;text-decoration:none;}
+body{font:12px/250% Arial;}
+.brand a{
+    display: block;
+    float: left;
+    margin: 20px;
+    width: 250px;
+    height: 335px;
+    text-align: center;
+    position: relative;
+}
+.brand img{
+    width: 250px;
+    height: 335px;
+    box-shadow:5px 5px 10px #999999;
+
+}
+.brand .info{
+    display: none;
+    background-color: #f0f0f0;
+    color: #369242;
+
+}
+.vertical .info{
+    width: 0;
+    height: 335px;
+    margin: 0 auto;
+    box-shadow:5px 5px 10px #999999;
+
+}
